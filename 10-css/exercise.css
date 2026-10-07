@@ -14,29 +14,91 @@
  * Keep the page open in the browser and refresh after each change.
  */
 
-/* TODO: a rule for `body` that sets
- *       font-family, color, and background-color. */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+}
 
-/* TODO: a rule for `.page` that sets
- *       max-width, and margin (use `0 auto` to centre it). */
+main {
+  padding: 1rem;
+}
 
-/* TODO: a rule for `header` that sets
- *       display: flex;
- *       justify-content: space-between;
- *       align-items: center;
- *       and one more property of your choosing. */
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-/* TODO: a rule for `nav a` — a descendant selector, so it only affects links
- *       inside the nav — that sets
- *       color, and text-decoration. */
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-/* TODO: a rule for `.card-list` that sets
- *       display: flex;
- *       gap (any size);
- *       flex-wrap: wrap; */
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  line-height: 1.5;
+}
 
-/* TODO: a rule for `.card` that sets
- *       padding, border-radius, and background-color. */
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
 
-/* TODO: a rule for `.price` that sets
- *       color, and font-weight. */
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+nav a.active:hover {
+  text-decoration: none;
+}
+
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 1rem;
+  padding: 1rem;
+    width: calc(33.333% - 2rem);
+  background-color: #fff;  
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0;
+}
